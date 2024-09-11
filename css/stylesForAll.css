@@ -1,0 +1,37 @@
+/*Estilos globales*/
+
+/*Paleta de colores*/
+:root {
+  --color-primary: #eee5e9;
+  --color-secondary: #414288;
+  --color-tertiary: #020202;
+  --color-quaternary: #31e981;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Personalización del scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(
+    --color-tertiary
+  ); /* color del "pulgar" de la barra de scroll */
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(
+    --color-primary
+  ); /* color del fondo de la barra de scroll */
+}
