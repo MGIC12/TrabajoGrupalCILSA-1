@@ -3,7 +3,7 @@
 /*Paleta de colores*/
 :root {
   --color-primary: #eee5e9;
-  --color-secondary: #414288;
+  --color-secondary: #cbcae8;
   --color-tertiary: #020202;
   --color-quaternary: #31e981;
 }
@@ -34,4 +34,30 @@ body::-webkit-scrollbar-track {
   background-color: var(
     --color-primary
   ); /* color del fondo de la barra de scroll */
+}
+
+/* Estilos para el navbar */
+.logo {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.active {
+  font-weight: bold;
+  color: var(--color-tertiary) !important;
+  background-color: transparent !important;
+}
+
+.color-nav {
+  background-color: var(--color-secondary);
+}
+
+.dropdown-menu {
+  background-color: var(--color-primary);
+  border-color: var(--color-tertiary);
+}
+
+.dropdown-item {
+  color: var(--color-tertiary);
 }

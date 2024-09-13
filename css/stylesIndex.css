@@ -1,0 +1,15 @@
+.c-item {
+  height: 580px;
+}
+
+.c-img {
+  height: 120%;
+  object-fit: cover;
+  filter: saturate(125%) contrast(125%);
+}
+
+.c-video {
+  height: 120%;
+  object-fit: cover;
+  filter: saturate(125%) contrast(125%);
+}
