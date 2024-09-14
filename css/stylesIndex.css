@@ -31,3 +31,12 @@
 .img-container:hover {
   filter: brightness(1.5);
 }
+
+.card-text:hover {
+  transform: scale(1.1);
+}
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
