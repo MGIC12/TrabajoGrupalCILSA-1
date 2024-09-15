@@ -5,7 +5,7 @@
   --color-primary: #eee5e9;
   --color-secondary: #cbcae8;
   --color-tertiary: #020202;
-  --color-quaternary: #31e981;
+  --color-quaternary: #9c9adb;
 }
 /* geologica-latin-wght-normal */
 @font-face {
@@ -73,3 +73,20 @@ body::-webkit-scrollbar-track {
 .dropdown-item {
   color: var(--color-tertiary);
 }
+
+/* Clases detalles */
+.btn-color-p {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.btn-color-q {
+  background-color: var(--color-quaternary);
+  color: white;
+}
+
+.product-image {
+  max-height: 500px;
+  object-fit: cover;
+  /* width: 100%; */
+}
+

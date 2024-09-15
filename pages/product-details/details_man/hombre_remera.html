@@ -74,6 +74,96 @@
         </div>
       </nav>
     </header>
+
+    <section class="mt-5 py-3">
+
+      <div class="container justify-content-center mt-5">
+
+        <div class="row container-fluid justify-content-center">
+          <!-- Imagen de la remera -->
+          <div class="col-md-6 container-fluid row-gap-3 justify-content-center">
+              <img src="../../../sources/img/fulbo-hombre.png" alt="Remera Negra" class="row img-fluid product-image">
+              <p class="row p-2">¡Demuestra tu pasión por el fútbol con nuestra remera exclusiva para fans del fulbito! Diseñada para los verdaderos seguidores del deporte rey, esta prenda es el complemento perfecto para mostrar tu lealtad al fulbo y celebrar cada victoria con estilo.</p>
+          </div>
+
+          <!-- Detalles de la remera -->
+          <div class="col-md-6 container-fluid row-gap-3 text-center">
+            <h1 class="row display-4">Remera de Algodón FULBO</h1>
+            <p class="row text-muted fs-2 justify-content-center">$25.000</p>
+            
+            <!-- Opciones de Talle y Cantidad -->
+            <form class="row container-fluid justify-content-center">
+              <div class="row column-gap-3 justify-content-center">
+                <div class="form-group col-sm-4">
+                    <label for="shippingMethod">Talle</label>
+                    <select class="form-select" id="shippingMethod">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+                <div class="col-sm-4 mt-3">
+                  <div class="counter-container form-control text-center">
+                    <button class="py-0 btn btn-sm btn-color-q" id="decrement-btn">-</button>
+                    <span class="counter-display" id="counter">0</span>
+                    <button class="py-0 btn btn-sm btn-color-q" id="increment-btn">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row column-gap-3 justify-content-center">
+                <button class="col-sm-4 btn btn-color-p btn-m mt-4">Agregar al carrito</button>
+                <button class="col-sm-4 btn btn-color-q btn-m ml-2 mt-4">Favoritos</button>
+              </div>
+            </form>
+
+            <!-- Opciones de Envío -->
+            <h3 class="row mt-4 justify-content-center">Medios de Envío</h3>
+            <form class="row container-fluid justify-content-center">
+              <div class="row justify-content-center">
+                <div class="form-group mt-2">
+                  <label for="postalCode">Código Postal:</label>
+                  <input type="text" class="form-control" id="postalCode" placeholder="Tu código postal">
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <button type="submit" class="mt-2 btn btn-color-p col-sm-6">Calcular Envío</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="row container-fluid mt-4 row-gap-3">
+            <div class="col-md-6">
+                <h3>Información Adicional</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Material:</strong> Algodón 100%</li>
+                    <li class="list-group-item"><strong>Estampa:</strong> DTF</li>
+                    <li class="list-group-item"><strong>Color:</strong> Negro</li>
+                    <li class="list-group-item"><strong>Tamaño:</strong> S, M, L, XL, XXL</li>
+                    <li class="list-group-item"><strong>Instrucciones de Cuidado:</strong> Lavar a máquina en frío, secar a baja temperatura.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Opiniones</h3>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <h5>Juan Pérez</h5>
+                        <p>Excelente calidad. Amo el fulbo.</p>
+                    </div>
+                    <div class="list-group-item">
+                        <h5>Ana Gómez</h5>
+                        <p>La pelota siempre al 10.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
