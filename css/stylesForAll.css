@@ -74,6 +74,12 @@ body::-webkit-scrollbar-track {
   color: var(--color-tertiary);
 }
 
+.img-oferta {
+  max-height: 238px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
 /* Clases detalles */
 .btn-color-p {
   background-color: var(--color-secondary);
