@@ -48,6 +48,15 @@ body::-webkit-scrollbar-track {
   ); /* color del fondo de la barra de scroll */
 }
 
+a {
+  text-decoration: none;
+}
+footer {
+	width: 100%;
+	padding: 10px;
+	background-color: var(--color-secondary);
+}
+
 /* Estilos para el navbar */
 .logo {
   width: 100%;
@@ -95,4 +104,3 @@ body::-webkit-scrollbar-track {
   object-fit: cover;
   /* width: 100%; */
 }
-
