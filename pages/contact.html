@@ -120,48 +120,7 @@
         <button type="submit" class="btn btn-dark mt-4">Enviar</button>
       </form>
     </div>
-    <script>
-      (() => {
-        "use strict";
-        const forms = document.querySelectorAll(".needs-validation");
-
-        // Función de validación para comprobar si hay símbolos no deseados
-        function contieneSimbolos(texto) {
-          const expresion = /^[a-zA-Z0-9\s]*$/; // Expresión regular que permite letras, números y espacios
-          return !expresion.test(texto);
-        }
-
-        // Loop sobre los formularios y prevenir el envío
-        Array.from(forms).forEach((form) => {
-          form.addEventListener(
-            "submit",
-            (event) => {
-              let camposInvalidos = false;
-
-              // Verificar cada campo del formulario
-              form.querySelectorAll("input, textarea").forEach((campo) => {
-                if (contieneSimbolos(campo.value)) {
-                  camposInvalidos = true;
-                }
-              });
-
-              if (!camposInvalidos && form.checkValidity()) {
-                console.log("Todos los campos son válidos");
-                // Mostrar una alerta si todos los campos son válidos
-                alert("El formulario se ha validado correctamente.");
-              } else {
-                console.log("Hay campos inválidos");
-                event.preventDefault();
-                event.stopPropagation();
-              }
-
-              form.classList.add("was-validated");
-            },
-            false
-          );
-        });
-      })();
-    </script>
+    <script src="../js/validacionFormulario.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
